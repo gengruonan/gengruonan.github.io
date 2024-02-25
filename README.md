@@ -1,14 +1,17 @@
-# updated website
+jekyll 使用 Github page
 
-This repo is built on a fork of **Jekyll Now** from [this repository](https://github.com/barryclark/jekyll-now). **Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
+jekyll 文档 基本用法 - Jekyll • 简单静态博客网站生成器 (jekyllcn.com)
 
-The website design is just a modification of [Jon Barron's website](https://jonbarron.info/) and is converted for my own use, re-purposing my old markdown posts. **Feel free to use template for your own purposes**, but please respect copyright for all the images/content in my `images`, `pdfs`, `_posts` folders. 
+### 1. 安装ruby 先检查是否已经安装
 
+[下载 --- Downloads (rubyinstaller.org)](https://rubyinstaller.org/downloads/)
 
+### 2. 执行 gem install jekyll
 
-## issues
-* In general, jekyll will try to build a full page for every post. I skip that by forcing `permalink: /`. This creates multiple entries in sitemap.xml for index.html but is otherwise fine. 
-* If you want multiple paragraphs, consider using `excerpt_separator: <!--more-->` in `_config.yml`, for my own use I didn't need this. 
-* My own posts have lots of extra stuff left over from my old jekyll design ("author", long descriptions, etc.), feel free to ignore them
-* I use thumbnails, so I can upload arbitrary sized images but then only display small ones. The `_make_thumbnails.sh` script generates them and the html template looks in `tn/` for all images. 
-* I have three categories of post with slightly differerent formatting, so changing sizing requires edits in multiple paces. 
+### 3. 执行 gem install jekyll bundler
+
+### 4. 执行 gem install jekyll-sitemap
+
+### 5. 执行jekyll serve
+
+### 6. 如果满意直接push到github上 默认会自动部署

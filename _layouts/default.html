@@ -58,213 +58,77 @@
           </tr>
         </table>
 
-        <!--<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Research</h2>
+              <h2>Vocational Projects</h2>
               <p>
-                I'm interested in computer vision, machine learning, optimization, graphics and robotics.
+                In my previous work, I was proficient in using satellite instrument data to generate products about atmosphere, land and ocean. I am interested in combining AI algorithm with remote sensing to serve more application scenarios.
               </p>
             </td>
           </tr>
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'research' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              {{post.authors}}
-
-              <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-              <br>
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">arxiv</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.youtube %}
-              <a href="{{post.youtube}}">youtube</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>-->
-        <br>
-        <br>
-        <br>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Current Projects</h2>
-              <p>Multi-source satellite data reception and processing application system
-                Responsible to process level 0 data to level 1 and generate cloud, dust, atmospheric motion vector, SST,
-                sea fog, etc. Available instruments: Polar orbiting satellites(TERRA/AQUA-MODIS, FengYun 3C/FengYun
-                3D-MERSI, JPSS1/2-VIIRS, METOP B/C-AVHRR), geostationary satellites(FY4A-AGRI, GEO-KOMPSAT-2A-AMI,
-                Himawari8-ABI)
-                At present, this system has been deployed in many airports, universities and government environmental
-                monitoring centers.
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:60%;vertical-align:middle">
+              <h3>
+                Multi-source satellite data reception and processing application system
+              </h3>
+              <p>
+                esponsible to process level 0 data to level 1 and generate cloud, dust, atmospheric motion vector, SST, sea fog, etc. Available instruments: Polar orbiting satellites(TERRA/AQUA-MODIS, FengYun 3C/FengYun 3D-MERSI, JPSS1/2-VIIRS, METOP B/C-AVHRR), geostationary satellites(FY4A-AGRI, GEO-KOMPSAT-2A-AMI, Himawari8-ABI) .At present, this system has been deployed in many airports, universities and government environmental monitoring centers.
               </p>
             </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'Intel' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              <em>{{post.categories}} {{post.course}}</em>
-              <br>
-              {{ post.date | date: "%Y-%m-%d" }}
-
-              <br>
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
-              {% endif %}
-              {% if post.patent %}
-              <a href="{{post.patent}}">patent</a> /
-              {% endif %}
-              {% if post.patent2 %}
-              <a href="{{post.patent2}}">patent #2</a> /
-              {% endif %}
-              {% if post.patent3 %}
-              <a href="{{post.patent3}}">patent #3</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-              <a href="{{post.video2}}">video #2</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <img style="width:50%;max-width:50%" alt="profile photo" src="images/1.jpg">
             </td>
           </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-        <br>
-        <br>
-        <br>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Other Projects</h2>
-              <p> These include coursework, side projects and unpublished research work. 
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:60%;vertical-align:middle">
+              <h3>
+                Assessment of air quality in cities using satellite data
+              </h3>
+              <p>
+                Responsible to evaluate the near-ground mass concentration of NO2, CO, SO2, O3 and PM2.5, PM10 using S5P-TROPOMI, Himawari8-ABI products and meteorological data, as well as analyze the causes and transmission processes of pollution. At presents, this system has been serving for Lvliang(Shanxi Province), Xuchang(Henan Province), and Tieling(Liaoning Province) Ecological Environment Bureau.
               </p>
             </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat != 'research' and cat != 'Intel' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <img style="width:50%;max-width:50%" alt="profile photo" src="images/20240304-110008.jpg">
             </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              <em>{{post.categories}} {{post.course}}</em>
-              <br>
-              {{ post.date | date: "%Y-%m-%d" }}
-
-              <br>
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
-              {% endif %}
-              {% if post.patent %}
-              <a href="{{post.patent}}">patent</a> /
-              {% endif %}
-              {% if post.patent2 %}
-              <a href="{{post.patent2}}">patent #2</a> /
-              {% endif %}
-              {% if post.patent3 %}
-              <a href="{{post.patent3}}">patent #3</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-              <a href="{{post.video2}}">video #2</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <img style="width:50%;max-width:50%" alt="profile photo" src="images/20240304-110025.jpg">
             </td>
           </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:center;font-size:small;">
-                Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:60%;vertical-align:middle">
+              <h3>
+                Estimation of Carbon Sink of urban forest vegetation using satellite data
+              </h3>
+              <p>
+                Responsible to comprehensively analyze urban forest carbon sink using TERRA/AQUA-MODIS, Sentinel 2-MSI products and high-resolution land distribution data. At presents, this system has been serving for Jiangsu Province Environmental Monitoring Center.
               </p>
             </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <img style="width:50%;max-width:50%" alt="profile photo" src="images/20240304-110034.jpg">
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <img style="width:50%;max-width:50%" alt="profile photo" src="images/20240304-110029.jpg">
+            </td>
+          </tr>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:60%;vertical-align:middle">
+              <h3>
+                National Satellite Meteorological Center FengYun-3D PGS(Product Generation System)
+              </h3>
+              <p>
+                Responsible to develop algorithms for MERSI-II to generate CLM(cloud mask), CTH(cloud top height), CTT(cloud top temperature), atmospheric motion vector and polar regions sea ice products.
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <img style="width:50%;max-width:50%" alt="profile photo" src="images/20240304-110037.jpg">
+            </td>
           </tr>
         </table>
+
       </td>
     </tr>
   </table>
